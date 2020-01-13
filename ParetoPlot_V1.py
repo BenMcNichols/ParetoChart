@@ -96,6 +96,8 @@ def pareto_plot(df, x=None, y=None, customer = None, show_pct_y=False, pct_forma
 
 #pareto_plot(df, x='Reason', y='Supplier', customer="Joe's Jam",show_pct_y=True,saveas="testfig.png")    
 
+pareto_plot(df, x='Reason', y='Supplier', show_pct_y=False,saveas="Combined Pareto.png")
+
 for count,customer in enumerate(df["Supplier"].unique().tolist()):
     savename = customer+" Pareto.png"
     print(savename)
